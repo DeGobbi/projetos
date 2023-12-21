@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="visor">
+            <h1></h1>
+        </div>
+        <div class="teclado">
+            <div class="teclas">
+                <button onclick="clicou(event)">7</button>
+                <button onclick="clicou(event)">8</button>
+                <button onclick="clicou(event)">9</button>
+                <button onclick="clicou(event)">+</button>
+            </div>
+            <div class="teclas">
+                <button onclick="clicou(event)">4</button>
+                <button onclick="clicou(event)">5</button>
+                <button onclick="clicou(event)">6</button>
+                <button onclick="clicou(event)">-</button>
+            </div>
+            <div class="teclas">
+                <button onclick="clicou(event)">1</button>
+                <button onclick="clicou(event)">2</button>
+                <button onclick="clicou(event)">3</button>
+                <button onclick="clicou(event)">*</button>
+            </div>
+            <div class="teclas">
+                <button onclick="clicou(event)">0</button>
+                <button onclick="clicou(event)">(</button>
+                <button onclick="clicou(event)">)</button>
+                <button onclick="clicou(event)">/</button>
+            </div>
+            <div class="teclas">
+                <button onclick="clicou(event)">.</button>
+                <button id="apagarRecente" onclick="apagarRecente(event)">CE</button>
+                <button id="apagar" onclick="apagar(event)">C</button>
+                <button id="enviar" onclick="enviar(event)">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

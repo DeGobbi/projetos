@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Luta RPG</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="opcoes">
+            <label>Cenário:
+                <select id="cenario">
+                    <option value="floresta" name="floresta">Floresta</option>
+                    <option value="masmorra" name="masmorra">Masmorra</option>
+                </select>
+            </label>
+
+            <label>Personagem:
+                <select id="personagem">
+                    <option value="cavaleiro" name="cavaleiro">Cavaleiro</option>
+                    <option value="arqueiro" name="arqueiro">Arqueiro</option>
+                    <option value="mago" name="mago">Mago</option>
+                    <option value="barbaro" name="barbaro">Bárbaro</option>
+                </select>
+            </label>
+            <input type="text" placeholder="Nome do herói" />
+            <button onclick="cenario()">Selecionar</button>
+        </div>
+        <ul class="log">
+
+        </ul>
+    </div>
+
+    <div class="cenario">
+        <div id="heroiDiv" class="heroi personagem">
+            <strong>
+                <p class="heroiName">--</p>
+            </strong>
+            <img id="heroi" />
+            <div class="barLife">
+                <div class="bar"></div>
+            </div>
+            <button class="botaoAtaque">Atacar</button>
+        </div>
+        <div id="monstroDiv" class="monstro personagem">
+            <strong>
+                <p class="monstroName">--</p>
+            </strong>
+            <img id="monstro" />
+            <div class="barLife">
+                <div class="bar"></div>
+            </div>
+            <button class="botaoAtaque">Atacar</button>
+        </div>
+    </div>
+
+    <script src="assets/javascript/classes.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
